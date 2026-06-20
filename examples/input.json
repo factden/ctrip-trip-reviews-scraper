@@ -1,0 +1,11 @@
+{
+  "startUrls": [
+    "https://www.trip.com/hotels/macau-hotel-detail-344983/galaxy-hotel/",
+    "https://hotels.ctrip.com/hotels/1286148.html"
+  ],
+  "maxReviewsPerHotel": 100,
+  "sortBy": "mostRecent",
+  "minRating": 1,
+  "maxRating": 5,
+  "proxyConfiguration": { "useApifyProxy": true }
+}
