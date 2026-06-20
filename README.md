@@ -25,7 +25,7 @@ runs on Apify — no login, proxy, or anti‑bot setup required.
 
 Give it **Trip.com** hotel URLs, **Ctrip (hotels.ctrip.com)** hotel URLs, or a mix of both — each URL is processed in
 its native locale (Trip.com returns English reviews, Ctrip returns Chinese) — and get every public review as a clean,
-structured row: **32 fields** including 4 sub‑ratings, hotel owner responses, reviewer IP‑location, travel type,
+structured row: **32 data points** including 4 sub‑ratings, hotel owner responses, reviewer IP‑location, travel type,
 machine‑translation, and an LLM‑ready `markdownContent` field.
 
 ### Two things you won't find in other Trip.com / Ctrip scrapers
@@ -37,9 +37,9 @@ unified dataset. No other Apify actor covers the Ctrip side.
 🤖 **LLM‑ready `markdownContent` per review** — a self‑contained markdown block, ready for direct vector‑DB / RAG
 ingestion with zero formatting work.
 
-Plus per‑review depth most scrapers drop: `subRatingCleanliness` / `subRatingLocation` / `subRatingService` /
-`subRatingFacilities`, hotel `ownerResponseText`, `reviewerIpLocation` (Chinese province, Ctrip rows), `travelType`,
-and `recommends`.
+Plus per‑review depth most scrapers drop: a clubbed `subRatings` array (Cleanliness / Location / Service /
+Facilities), the hotel's `ownerResponse` (`{ text, date }`), `reviewer.ipLocation` (Chinese province, Ctrip rows),
+`travelType`, and `recommends`.
 
 ---
 
@@ -71,7 +71,7 @@ Sample input and output live in **[`examples/`](./examples)**:
 
 - [`examples/input.json`](./examples/input.json) — a ready‑to‑run input (one Trip.com hotel + one Ctrip hotel)
 - [`examples/reviews-output.sample.json`](./examples/reviews-output.sample.json) — **illustrative** rows (one `trip`,
-  one `ctrip`) showing the full 32‑field shape incl. `markdownContent`
+  one `ctrip`) showing the full field shape (32 data points) incl. `markdownContent`
 
 > ⏳ The rows in `examples/` today are clearly‑marked illustrative stubs so you can see the exact field shape now. A
 > full real sample (browse‑in‑GitHub CSV/JSON) and a downloadable HuggingFace / Kaggle dataset are on the way.
@@ -87,7 +87,7 @@ or HTML**.
   competitor hotels on both Trip.com and Ctrip.
 - **Voice‑of‑customer / property research** — structured ratings + free‑text across hundreds of reviews per hotel.
 - **AI / RAG pipelines** — drop `markdownContent` straight into a vector DB.
-- **China‑market analysis** — the Ctrip / 携程 corpus (with `reviewerIpLocation`) that English‑only scrapers miss.
+- **China‑market analysis** — the Ctrip / 携程 corpus (with `reviewer.ipLocation`) that English‑only scrapers miss.
 
 ---
 
