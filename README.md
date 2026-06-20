@@ -75,6 +75,10 @@ Sample input and output live in **[`examples/`](./examples)**:
 - [`examples/reviews-sample.csv`](./examples/reviews-sample.csv) — **100 real reviews** (4 hotels, both locales),
   browsable right in GitHub's table view
 
+📊 **Full 800-review sample** (CSV / JSON / JSONL + per-hotel summary) on
+**[HuggingFace](https://huggingface.co/datasets/fact-den/ctrip-trip-com-hotel-reviews-sample)** and
+**[Kaggle](https://www.kaggle.com/datasets/factden/trip-com-and-ctrip-hotel-reviews-sample-2026)**.
+
 Every field is documented in **[`FIELDS.md`](./FIELDS.md)**. From Apify you can download results as **JSON, CSV, Excel,
 or HTML**.
 
