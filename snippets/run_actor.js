@@ -24,7 +24,7 @@ const run = await client.actor('factden/ctrip-trip-reviews-scraper').call(input)
 const { items } = await client.dataset(run.defaultDatasetId).listItems();
 for (const row of items) {
     console.log(`${row.overallRating}  [${row.source}]  ${row.hotelName}`);
-    if (row.ownerResponseText) {
+    if (row.ownerResponse) {
         console.log('   ↳ hotel responded');
     }
 }

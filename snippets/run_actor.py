@@ -25,5 +25,5 @@ run = client.actor("factden/ctrip-trip-reviews-scraper").call(run_input=run_inpu
 for row in client.dataset(run["defaultDatasetId"]).iterate_items():
     rating = row.get("overallRating")
     print(f"{rating}  [{row.get('source')}]  {row.get('hotelName')}")
-    if row.get("ownerResponseText"):
+    if row.get("ownerResponse"):
         print("   ↳ hotel responded")
