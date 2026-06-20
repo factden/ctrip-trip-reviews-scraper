@@ -1,9 +1,13 @@
 # Examples
 
-- **`input.json`** — a ready‑to‑run actor input (one Trip.com hotel + one Ctrip hotel). Real and usable as‑is.
-- **`reviews-output.sample.json`** — **illustrative stub** rows showing the full output shape (32 data points; one `trip`
-  row, one `ctrip` row). The values are placeholders, clearly marked in each `reviewText` / `markdownContent` — **not
-  real scraped data**. They exist so you can see the exact field shape before running the actor. A real public‑data
-  sample will replace this file shortly.
+All real public review data collected with the actor.
 
-Run the actor: **https://apify.com/factden/ctrip-trip-reviews-scraper?fpr=factden**
+- **`input.json`** — a ready‑to‑run actor input (one Trip.com hotel + one Ctrip hotel).
+- **`reviews-output.sample.json`** — **3 real review rows** showing the full v1.1 field shape: a Trip.com row (Galaxy
+  Macau, with a hotel `ownerResponse`), a Ctrip row (Sofitel Beijing, with `reviewer.ipLocation`), and a Ctrip row for
+  the New York Hilton **posted from the USA** (no owner response). Shows the nested `reviewer` / `ownerResponse`
+  objects and the `subRatings` array.
+- **`reviews-sample.csv`** — **100 real reviews** (25 per hotel, both locales), browsable right in GitHub's table
+  view. CSV‑flattened: `reviewer_*` columns, `ownerResponse_text`, and `subRatings` joined into one cell.
+
+Run the actor for any hotel: **https://apify.com/factden/ctrip-trip-reviews-scraper?fpr=factden**

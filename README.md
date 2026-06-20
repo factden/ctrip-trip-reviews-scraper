@@ -70,11 +70,10 @@ More: **[Python](./snippets/run_actor.py)** · **[Node](./snippets/run_actor.js)
 Sample input and output live in **[`examples/`](./examples)**:
 
 - [`examples/input.json`](./examples/input.json) — a ready‑to‑run input (one Trip.com hotel + one Ctrip hotel)
-- [`examples/reviews-output.sample.json`](./examples/reviews-output.sample.json) — **illustrative** rows (one `trip`,
-  one `ctrip`) showing the full field shape (32 data points) incl. `markdownContent`
-
-> ⏳ The rows in `examples/` today are clearly‑marked illustrative stubs so you can see the exact field shape now. A
-> full real sample (browse‑in‑GitHub CSV/JSON) and a downloadable HuggingFace / Kaggle dataset are on the way.
+- [`examples/reviews-output.sample.json`](./examples/reviews-output.sample.json) — **3 real review rows** (Trip.com +
+  Ctrip) showing the full 23‑field shape incl. nested `reviewer` / `ownerResponse` and the `subRatings` array
+- [`examples/reviews-sample.csv`](./examples/reviews-sample.csv) — **100 real reviews** (4 hotels, both locales),
+  browsable right in GitHub's table view
 
 Every field is documented in **[`FIELDS.md`](./FIELDS.md)**. From Apify you can download results as **JSON, CSV, Excel,
 or HTML**.
@@ -122,5 +121,5 @@ locale and the `source` field tells you which platform each row came from.
 
 ---
 
-_The `examples/` rows are clearly‑marked illustrative stubs that show the field shape; a real public‑data sample will
-replace them shortly. Run the actor on Apify to pull live data for any hotel, at any scale._
+_The `examples/` files are real public review data collected with the actor, provided for documentation/evaluation.
+Run the actor on Apify to pull live data for any hotel, at any scale._
