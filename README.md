@@ -71,7 +71,7 @@ Sample input and output live in **[`examples/`](./examples)**:
 
 - [`examples/input.json`](./examples/input.json) — a ready‑to‑run input (one Trip.com hotel + one Ctrip hotel)
 - [`examples/reviews-output.sample.json`](./examples/reviews-output.sample.json) — **3 real review rows** (Trip.com +
-  Ctrip) showing the full 23‑field shape incl. nested `reviewer` / `ownerResponse` and the `subRatings` array
+  Ctrip) showing the full output shape (32 data points) incl. nested `reviewer` / `ownerResponse` and the `subRatings` array
 - [`examples/reviews-sample.csv`](./examples/reviews-sample.csv) — **100 real reviews** (4 hotels, both locales),
   browsable right in GitHub's table view
 
