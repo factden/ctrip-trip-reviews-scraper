@@ -120,8 +120,15 @@ locale and the `source` field tells you which platform each row came from.
 ## Other scrapers by FactDen
 
 - [G2 Reviews Scraper](https://apify.com/factden/g2-reviews-scraper?fpr=factden)
+  ([docs](https://github.com/factden/g2-reviews-scraper))
 - [Indeed Jobs Scraper](https://apify.com/factden/indeed-jobs-scraper?fpr=factden)
+  ([docs](https://github.com/factden/indeed-jobs-scraper))
 - [All FactDen actors →](https://apify.com/factden?fpr=factden)
+
+**Docs & guides:**
+
+- [How to scrape Trip.com & Ctrip reviews](https://factden.com/blog/how-to-scrape-ctrip-trip-reviews)
+- [factden.com](https://factden.com)
 
 ---
 
