@@ -123,6 +123,8 @@ locale and the `source` field tells you which platform each row came from.
   ([docs](https://github.com/factden/g2-reviews-scraper))
 - [Indeed Jobs Scraper](https://apify.com/factden/indeed-jobs-scraper?fpr=factden)
   ([docs](https://github.com/factden/indeed-jobs-scraper))
+- [Expedia Hotel Reviews Scraper](https://apify.com/factden/expedia-hotel-reviews-scraper?fpr=factden)
+  ([docs](https://github.com/factden/expedia-hotel-reviews-scraper))
 - [All FactDen actors →](https://apify.com/factden?fpr=factden)
 
 **Docs & guides:**
