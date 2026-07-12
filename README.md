@@ -96,7 +96,7 @@ or HTML**.
 
 ## How much does it cost?
 
-Pay‑per‑event on Apify: **$0.01 per run + $0.004 per review** (down to $0.0025 on higher plans). New Apify accounts get
+Pay‑per‑event on Apify: **$0.004 per review, no per-run start fee** (down to $0.0025 on higher plans). New Apify accounts get
 **$5 in free credit**. See the [actor page](https://apify.com/factden/ctrip-trip-reviews-scraper?fpr=factden) for
 current pricing.
 
