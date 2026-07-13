@@ -1,4 +1,4 @@
-# Trip.com &amp; Ctrip (携程) Reviews Scraper
+# Trip.com & Ctrip (携程) Reviews Scraper
 
 > Extract public **hotel reviews from both Trip.com and Ctrip (携程) in a single run** — with per‑review
 > **sub‑ratings**, **hotel owner responses**, reviewer **IP‑location**, and an **LLM‑ready markdown field** for
@@ -7,7 +7,7 @@
 [![Run on Apify](https://img.shields.io/badge/Run%20on-Apify-00b04f?logo=apify&logoColor=white)](https://apify.com/factden/ctrip-trip-reviews-scraper?fpr=factden)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
-This repo is the **developer entry point** for the Trip.com &amp; Ctrip Reviews Scraper actor: the output shape,
+This repo is the **developer entry point** for the Trip.com & Ctrip Reviews Scraper actor: the output shape,
 copy‑paste API snippets, a full [field dictionary](./FIELDS.md), and a short [how‑to](./HOWTO.md). The actor itself
 runs on Apify — no login, proxy, or anti‑bot setup required.
 
