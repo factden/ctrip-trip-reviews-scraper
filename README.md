@@ -136,3 +136,5 @@ locale and the `source` field tells you which platform each row came from.
 
 _The `examples/` files are real public review data collected with the actor, provided for documentation/evaluation.
 Run the actor on Apify to pull live data for any hotel, at any scale._
+
+_Found this useful? A star on this repo helps other people find it._
