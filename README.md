@@ -119,6 +119,8 @@ locale and the `source` field tells you which platform each row came from.
 
 ## Other scrapers by FactDen
 
+- [Google Hotels Scraper](https://apify.com/factden/google-hotels-scraper?fpr=factden)
+  ([docs](https://github.com/factden/google-hotels-scraper))
 - [G2 Reviews Scraper](https://apify.com/factden/g2-reviews-scraper?fpr=factden)
   ([docs](https://github.com/factden/g2-reviews-scraper))
 - [Indeed Jobs Scraper](https://apify.com/factden/indeed-jobs-scraper?fpr=factden)
