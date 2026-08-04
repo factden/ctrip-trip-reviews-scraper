@@ -127,6 +127,7 @@ locale and the `source` field tells you which platform each row came from.
   ([docs](https://github.com/factden/indeed-jobs-scraper))
 - [Expedia Hotel Reviews Scraper](https://apify.com/factden/expedia-hotel-reviews-scraper?fpr=factden)
   ([docs](https://github.com/factden/expedia-hotel-reviews-scraper))
+- [Airbnb Data Scraper](https://apify.com/factden/airbnb-data-scraper?fpr=factden) ([docs](https://github.com/factden/airbnb-data-scraper)) - Airbnb listings, prices, availability, occupancy, ADR/RevPAR & reviews; a pay-per-use AirDNA alternative.
 - [All FactDen actors →](https://apify.com/factden?fpr=factden)
 
 **Docs & guides:**
