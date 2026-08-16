@@ -119,6 +119,7 @@ locale and the `source` field tells you which platform each row came from.
 
 ## Other scrapers by FactDen
 
+- [MCA India Company & Director Data Scraper](https://apify.com/factden/mca-company-director-scraper?fpr=factden) - India MCA company master + directors' personal email & phone
 - [Google Hotels Scraper](https://apify.com/factden/google-hotels-scraper?fpr=factden)
   ([docs](https://github.com/factden/google-hotels-scraper))
 - [G2 Reviews Scraper](https://apify.com/factden/g2-reviews-scraper?fpr=factden)
