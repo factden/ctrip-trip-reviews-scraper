@@ -57,7 +57,7 @@ corpora downstream.
 |---|---|
 | `maxReviewsPerHotel` | Cap reviews per hotel (controls cost). |
 | `sortBy` | `mostRelevant`, `mostRecent`, `ratingHighToLow`, `ratingLowToHigh`. |
-| `fromDate` / `toDate` | Only reviews in a date window. |
+| `fromDate` | Only reviews submitted on or after this date (great for incremental syncs). |
 | `minRating` / `maxRating` | Filter by overall rating (1–5). |
 
 Full field reference: [`FIELDS.md`](./FIELDS.md). Full input format: [`examples/input.json`](./examples/input.json).
