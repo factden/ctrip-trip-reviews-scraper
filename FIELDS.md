@@ -16,13 +16,13 @@ row came from. Fields that a given platform doesn't provide are `null`.
 | `source` | string | `trip` (Trip.com) or `ctrip` (Ctrip / 携程). |
 | `submittedAt` | string \| null | Review submission timestamp in the hotel's local timezone (naive ISO 8601, no offset). |
 | `checkInMonth` | string \| null | Guest's check‑in month as `YYYY-MM` (source stores month precision). |
-| `reviewer` | object | Reviewer profile, clubbed: `{ name, lifetimeReviews, tier, isAnonymous, ipLocation }`. `name` is `null` when anonymous; `ipLocation` is the Chinese provincial origin (Ctrip rows only, e.g. "Posted from Zhejiang"). |
+| `reviewer` | object | Reviewer profile, clubbed: `{ name, lifetimeReviews, tier, isAnonymous, ipLocation }`. `name` is `null` when anonymous; `ipLocation` is the reviewer's region/country of origin (e.g. "Saudi Arabia", "China") where Trip.com exposes it. |
 | `travelType` | string \| null | Travel type label (Business / Family / Friends / Solo / Couple / Other). |
 | `roomName` | string \| null | Room type the guest booked. |
 | `language` | string \| null | ISO 639‑1 code of the original review text. |
-| `overallRating` | number \| null | Overall guest rating on a 0–5 scale (float, not rounded). |
+| `overallRating` | number \| null | Overall guest rating on Trip.com's 1–10 scale (matches the website). |
 | `ratingLabel` | string \| null | Localized rating tier label (Outstanding, Very good, Good, Average, Poor). |
-| `subRatings` | array | Per‑review sub‑ratings as a labeled‑string array (nulls omitted), e.g. `["Cleanliness: 4.9", "Location: 4.7", "Service: 5.0", "Facilities: 4.6"]`. Renders as a single tidy cell in CSV. |
+| `subRatings` | array | Sub‑ratings are published by Trip.com at the hotel level only (see the Hotels dataset), not per review, so this is an empty array on review rows; the field is retained for compatibility. |
 | `reviewText` | string \| null | Original‑language review body. |
 | `reviewTextTranslated` | string \| null | Machine‑translated text when the platform provides it (often `null` — only a subset is translated). |
 | `isMachineTranslated` | boolean | Whether `reviewTextTranslated` is present and came from the platform's translation engine. |

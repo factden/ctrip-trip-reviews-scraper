@@ -37,9 +37,10 @@ unified dataset. No other Apify actor covers the Ctrip side.
 🤖 **LLM‑ready `markdownContent` per review** — a self‑contained markdown block, ready for direct vector‑DB / RAG
 ingestion with zero formatting work.
 
-Plus per‑review depth most scrapers drop: a clubbed `subRatings` array (Cleanliness / Location / Service /
-Facilities), the hotel's `ownerResponse` (`{ text, date }`), `reviewer.ipLocation` (Chinese province, Ctrip rows),
-`travelType`, and `recommends`.
+Plus coverage most scrapers drop: **every review the page shows** including the aggregated Expedia +
+Hotels.com reviews Trip.com displays, the hotel's `ownerResponse` (`{ text, date }`), hotel-level
+sub-ratings (Cleanliness / Location / Service / Facilities), `reviewer.ipLocation` (region/country where
+exposed), and `travelType`. Ratings use Trip.com's 10-point scale.
 
 ---
 

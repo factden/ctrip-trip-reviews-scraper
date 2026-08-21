@@ -58,7 +58,7 @@ corpora downstream.
 | `maxReviewsPerHotel` | Cap reviews per hotel (controls cost). |
 | `sortBy` | `mostRelevant`, `mostRecent`, `ratingHighToLow`, `ratingLowToHigh`. |
 | `fromDate` | Only reviews submitted on or after this date (great for incremental syncs). |
-| `minRating` / `maxRating` | Filter by overall rating (1–5). |
+| `minRating` / `maxRating` | Filter by overall rating (1–10, Trip.com's 10-point scale). |
 
 Full field reference: [`FIELDS.md`](./FIELDS.md). Full input format: [`examples/input.json`](./examples/input.json).
 
